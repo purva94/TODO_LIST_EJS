@@ -8,17 +8,20 @@ var app = express();
 app.set("views", path.join(__dirname, "view"));
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
+var items = [];
 
 var example = "working";
 app.get("/", function (req, res) {
   //res.send("This web page is working Fine");
-  res.render("list", { exej: example });
+  res.render("list", { ejes: items });
 });
 
 // post request
 
 app.post("/", function (req, res) {
-  console.log(req.body.ele1);
+  var item = req.body.ele1;
+  items.push(item);
+  res.redirect("/");
 });
 
 //server
