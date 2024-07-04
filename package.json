@@ -1,13 +1,13 @@
 {
-  "name": "to_list_ejs",
+  "name": "to_do_list_ejs",
   "version": "1.0.0",
+  "description": "To Do list using EJS ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Purva",
+  "author": "Purva Shrivastava",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "body-parser": "^1.20.2",
     "ejs": "^3.1.10",
