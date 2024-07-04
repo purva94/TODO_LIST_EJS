@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do list</title> 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="box">
@@ -12,8 +12,12 @@
     </div>
     <div class="box"> 
      
-       <% for(var i=0;i<ejes.length; i++){%>
-           <p><%=ejes[i] %></p>
+       <% for(var i=0;i<ejes.length; i++){%>  
+        <div class="item">
+
+            <input type="checkbox">
+               <p><%=ejes[i] %></p>
+        </div>
        <% }%>
       <form action="/" method="POST">
         <input type="text" name="ele1" placeholder="Enter The Task " />

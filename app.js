@@ -7,6 +7,7 @@ var app = express();
 //view engine for ejs
 app.set("views", path.join(__dirname, "view"));
 app.set("view engine", "ejs");
+app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 var items = [];
 
