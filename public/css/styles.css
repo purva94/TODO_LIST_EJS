@@ -7,12 +7,12 @@ html{
 
 h1{
     color: #000;
-    padding: 10px;
+    padding: 11px;
 
 }
 
 .box{
-    max-width: 400px;
+    max-width: 401px;
     margin: 50px auto;
     background: white;
     border-radius: 5px;
@@ -78,5 +78,5 @@ input[type="text"]{
     background: transparent;
     font-size: 20px;
     font-weight: 200;
-    width: 313px;
+    width: 314px;
 }
